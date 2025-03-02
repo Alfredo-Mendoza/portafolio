@@ -1,13 +1,8 @@
-﻿@{
+﻿@model Persona
+
+@{
     ViewData["Title"] = "Home Page";
 }
+<partial name="_Presentacion">
 
-<div class="text-center">
-    <h1 class="display-4">Soy @ViewBag.Nombre</h1>
-    <h2>Soy un desarrollador full stack especializado en tecnologías .Net y Javascript</h2>
-
-    <img 
-        id="foto"
-        src="~/imagenes/pic_profile.svg"
-        alt="Imagen de Alfredo Mendoza"/>
-</div>
+<partial name="_Habilidades" />
