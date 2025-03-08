@@ -24,9 +24,10 @@ namespace Portafolio.Controllers
             return View(modelo);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Proyectos()
         {
-            return View();
+            List<ProyectoDTO> Proyectos = repositoryProjects.GetProyects();
+            return View(Proyectos);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
